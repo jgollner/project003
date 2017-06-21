@@ -1,0 +1,338 @@
+.filter-options {
+  position: absolute;
+  top: 10px;
+  float: left;
+  left: 250px;
+  z-index: 10000000;
+}
+
+
+.btn {
+  width: 150px;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 3px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  color: #ffffff;
+  opacity: .7;
+  font-weight: 300;
+}
+
+.btn:active,
+.btn.active {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-weight: 300;
+}
+
+
+
+
+
+.col-xs-3 {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0;
+	width: 230px;
+	text-align:left;
+
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  border-radius: 3px;
+  left: 0;
+  z-index: 10000000;
+  display: none;
+  text-decoration: none;
+  width: 230px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #222222;
+  border: 1px solid #333;
+  overflow: hidden;
+  
+  
+ 
+}
+
+
+.open > .dropdown-menu {
+  margin-top: 18px !important;
+  opacity: 1;
+  visibility: visible;
+  /*box-shadow: 3px 6px 6px #111;*/
+}
+.open.dropup > .dropdown-arrow {
+  margin-bottom: 10px;
+}
+.open.dropup > .dropdown-arrow.dropdown-arrow-inverse {
+  border-top-color: #34495e;
+}
+
+.dropdown-menu {
+  background-color: #222222;
+  border: none;
+  display: block;
+  width: 40px;
+  opacity: 0;
+  padding: 0;
+  visibility: hidden;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+
+.dropdown-menu.pull-right {
+  right: ;
+  left: auto;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  text-decoration: none;
+  clear: both;
+  font-weight: normal;
+  font-size: 14pt;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #8bc540;
+  text-decoration: none;
+  outline: 0;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+ 
+}
+.open > .dropdown-menu {
+  display: block;
+  opacity: .95;
+
+}
+.open > a {
+  outline: 0;
+}
+
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+
+
+.dropdown-inverse {
+  background-color: #222222;
+  color: #cccccc;
+  border: 1px solid #333;
+  padding: 4px 0 6px;
+}
+
+.dropdown-inverse li {
+  margin: 0 4px -2px;
+}
+.dropdown-inverse li:first-child > a,
+.dropdown-inverse li:last-child > a {
+  border-radius: 2px;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+.dropdown-inverse li:first-child dt + a,
+.dropdown-inverse li:last-child dt + a {
+  border-radius: 2px;
+}
+.dropdown-inverse li.active > a,
+.dropdown-inverse li.selected > a {
+  background: #111111;
+  color: #8bc540;
+  position: relative;
+  z-index: 100000;
+   font-family: 'Source Sans Pro', sans-serif;
+	 font-weight: 300;
+ 	 font-size: 14px;
+}
+
+
+.btn-primary {
+  color: #a5a5a5;
+  background-color: #222;
+  border: 1px solid #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+ 	margin-bottom: -20px;	
+ 	height: 40px;
+ 
+
+
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: ;
+  border-right: 3px solid #8bc540;
+  background-color: #191919;
+  border: 1px solid #555;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+}
+
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #8bc540;
+ 	background-color:#1abc9c;
+  border-color: #5dade2;
+  
+}
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #8bc540;
+background-color:#1abc9c;
+  border-color: #2c81ba;
+}
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: #8bc540;
+   
+}
+.select.select-block .dropdown-menu {
+  width: 100%;
+}
+.select .btn {
+  width: 150px;
+}
+.select .btn.btn-hg .filter-option {
+  left: 0px;
+  right: 40px;
+  top: 0px;
+}
+.select .btn.btn-hg .caret {
+ 
+  background-color:#1abc9c;
+}
+
+
+
+.open > .dropdown-arrow {
+  margin-top: 15px;
+  opacity: 1;
+}
+.dropdown-inverse li {
+  margin: 0 4px -2px;
+}
+.dropdown-inverse li:first-child > a,
+.dropdown-inverse li:last-child > a {
+  border-radius: 2px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.dropdown-inverse li:first-child dt + a,
+.dropdown-inverse li:last-child dt + a {
+  border-radius: 2px;
+}
+.dropdown-inverse li.active > a,
+.dropdown-inverse li.selected > a {
+  background: #1c1c1c;
+  color: #888;
+  border-right: 2px solid #8bc540;
+  margin-right: -140px;
+  position: relative;
+  font-size: 16px;
+  z-index: 1;
+}
+.dropdown-inverse li dt {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.dropdown-inverse li .divider {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.dropdown-inverse li > a {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 font-weight: 300;
+ 	 font-size: 16px;
+ 	 text-transform: uppercase;
+ 	 border-radius: 2px;
+ 	 color: #a5a5a5;
+ 	 padding: 15px 11px 15px;
+}
+.dropdown-inverse li > a:hover,
+.dropdown-inverse li > a:active,
+.dropdown-inverse li > a:focus {
+   background: #1c1c1c;
+   color: #8bc540;
+    font-size: 16px;
+}

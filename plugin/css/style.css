@@ -1,0 +1,365 @@
+
+
+.ttw-music-player {
+    width: 330px;
+    margin: 25px 0 0 140px;
+    font-family: 'Lato', arial, sans-serif;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index: 1000000;
+    height: 200px;   
+} 
+
+.ttw-music-player .player {
+    width: 100%;
+}
+
+/** Album Cover **/
+.ttw-music-player .album-cover {
+    position: relative;
+    margin: 120px 0 0 50px;
+    float: left;
+    background: #333 url(../images/album-cover-bg.jpg) no-repeat 0 0 scroll;;
+  
+}
+
+.ttw-music-player .album-cover .img {
+   
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color:transparent;
+}
+
+.ttw-music-player .album-cover .highlight {
+    background: transparent no-repeat 0 0 scroll;
+    opacity: 1;
+    border: 1px solid #333;
+    display: none;
+
+}
+
+.ttw-music-player .album-cover:hover .highlight {
+    opacity: 1;
+}
+
+.ttw-music-player .album-cover,
+.ttw-music-player .album-cover .img,
+.ttw-music-player .album-cover .highlight {
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+
+.ttw-music-player .album-cover img,
+.ttw-music-player .album-cover .img,
+.ttw-music-player .album-cover .highlight {
+    position: absolute;
+  
+    right: 0;
+    height:70px;
+    width:70px;
+}
+
+/** Track Info **/
+.ttw-music-player .track-info {
+    width: 165px;
+    margin: 120px 0 0 30px;
+    float: left;
+    font-size: 12px;
+}
+
+.ttw-music-player .track-info p {
+    margin: 0 0 8px 0;
+}
+
+.ttw-music-player .player .title {
+    color: #999;
+   
+     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.ttw-music-player .artist-outer {
+    color: #999;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+
+.ttw-music-player .artist {
+    color: #999;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 4px;
+}
+
+.ttw-music-player .rating {
+    width: 100px;
+    height: 16px;
+}
+
+.ttw-music-player .rating-star {
+    width: 20px;
+    height: 24px;
+    display: block;
+    float: left;
+    background: transparent url(../images/rating-off.svg) no-repeat center center scroll;
+    cursor: pointer;
+}
+
+.ttw-music-player .rating-star:hover,
+.ttw-music-player .rating-star.on,
+.ttw-music-player .rating-star.hover {
+    background: transparent url(../images/rating-on.svg) no-repeat center center scroll;
+}
+
+/** Player **/
+.ttw-music-player .player-controls {
+    width: 335px;
+    height: 100px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    position: absolute;
+   
+    float: left;
+    margin: 20px 0 0 30px;
+    
+}
+
+.ttw-music-player .player-controls .main {
+    width: 280px;
+    height: 125px;
+    margin: 10px 30px 0px 75px;
+    float: none;
+
+}
+
+.ttw-music-player .player-controls div {
+   
+    float: left;
+    cursor: pointer;
+}
+
+.ttw-music-player .previous, .ttw-music-player .next {
+    height: 32px;
+    width: 32px;
+    margin: 10px 0;
+}
+
+.ttw-music-player .play, .ttw-music-player .pause {
+    width: 32px;
+    height: 32px;
+    margin: 10px 27px 0;
+}
+
+.ttw-music-player .previous {
+    background: transparent url(../images/player-previous.svg) no-repeat center center scroll;
+}
+
+.ttw-music-player .next {
+    background: transparent url(../images/player-next.svg) no-repeat center center scroll;
+}
+
+.ttw-music-player .play {
+    background: transparent url(../images/player-play.svg) no-repeat center center scroll;
+}
+
+.ttw-music-player .pause {
+    background: transparent url(../images/player-pause.svg) no-repeat center center scroll;
+}
+
+.ttw-music-player .progress-wrapper {
+    height: 9px;
+    width: 215px;
+    float: left;
+    background: transparent url(../images/player-progress.png) repeat-x 0 0 scroll;
+    margin: -71px 10px 30px 47px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.ttw-music-player .progress {
+    height: 22px;
+    width: 135px;
+    cursor: pointer;
+
+}
+
+.ttw-music-player .elapsed {
+    height: 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 1px;
+    width: 60%;
+    background: transparent url(../images/player-elapsed.png) repeat-x 0 0 scroll;
+
+}
+
+.ttw-music-player .unused-controls {
+    display: none !important;
+}
+
+/** Description **/
+.ttw-music-player .description {
+    clear: both;
+    margin: 30px 0 0 0;
+    font-size: 9px;
+    color: #999;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+}
+
+.ttw-music-player .description.showing{
+    margin:30px 0;
+}
+
+/** Track List **/
+
+.ttw-music-player .tracklist {
+    padding: 10px 20px;
+   
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+   
+    color: #999;
+    font-size: 10px;
+}
+
+.ttw-music-player .tracklist ol {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+.ttw-music-player .tracklist li {
+    font-size: 10pt;
+    padding: 10px 0 10px 0;
+    list-style-position: inside;
+    position: relative;
+    visibility: hidden;
+}
+
+
+.ttw-music-player .tracklist li:hover {
+    color: #777;
+
+}
+
+.ttw-music-player li:last-child{
+    background: none;
+}
+
+
+.ttw-music-player .tracklist .title {
+    width: 164px;
+    display: inline-block;
+    padding: 0 0 0 14px;
+    cursor: pointer;
+}
+
+.ttw-music-player li:nth-child(1n + 10) .title{
+    padding-left:7px;
+
+}
+
+.ttw-music-player li.playing {
+    color:#666 !important;
+    display: none;
+
+}
+
+.ttw-music-player .tracklist .rating {
+    margin-left: 10px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    right: 72px;
+    top: 12.5px;
+}
+
+
+.ttw-music-player .rating-bar {
+    
+    display: none;
+    
+    
+}
+
+.ttw-music-player .rating-bar.on,
+.ttw-music-player .rating-bar:hover,
+.ttw-music-player .rating-bar.hover {
+    background: transparent url(../images/player-elapsed.png) no-repeat 100% scroll;
+}
+
+.ttw-music-player .buy {
+    width: 62px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+   
+    margin: 0 0 0 10px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 16px;
+    text-shadow: none;
+    color: #999;
+    text-decoration: none;
+}
+
+
+.ttw-music-player .buy:hover {
+    color: #eee;
+}
+
+.ttw-music-player .buy.not-active{
+    display:none;
+}
+
+.ttw-music-player .more {
+    display:none;
+    font-family: 'Lato Italic', arial, sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+    padding: 10px 0;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    
+}
+
+
+.ttw-music-player .show-more-button .more{
+    display:block;
+}
+
+
+/** Transitions **/
+
+/* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
+.ttw-music-player .player:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+
